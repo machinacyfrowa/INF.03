@@ -1,0 +1,46 @@
+* {
+    font-family: Verdana, sans-serif;
+}
+header {
+    display: flex;
+}
+div#headerLeft,
+div#headerRight {
+    background-color: seagreen;
+    color: white;
+    line-height: 150px;
+    height: 260px;
+    font-size: 160%;
+}
+div#headerLeft {
+    width: 75%;
+}
+div#headerRight {
+    width: 25%;
+    text-align: right;
+}
+main {
+    background-color: mintcream;
+    padding: 80px;
+}
+footer {
+    display: flex;
+}
+div#footerLeft,
+div#footerRight {
+    background-color: seagreen;
+    color: white;
+    width: 50%;
+    height: 70px;
+    text-align: center;
+}
+img {
+    box-shadow: 15px 15px 10px dimgray;
+}
+a {
+    text-decoration: none;
+    background-color: mintcream;
+    color: seagreen;
+    padding: 15px;
+    line-height: 70px;
+}
