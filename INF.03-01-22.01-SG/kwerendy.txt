@@ -1,0 +1,4 @@
+1. INSERT INTO `rezerwacje` (`id`, `nr_stolika`, `data_rez`, `liczba_osob`, `telefon`) VALUES (NULL, '1', '2017-07-04', '4', '111222333');
+2. SELECT nazwa,cena FROM `dania` WHERE TYP = 2;
+3. SELECT nazwa FROM `dania` WHERE cena < 15 AND typ = 3;
+4. UPDATE pracownicy SET stanowisko = 4 WHERE stanowisko = 3;

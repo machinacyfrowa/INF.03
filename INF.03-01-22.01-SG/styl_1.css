@@ -1,0 +1,41 @@
+body {
+    background-color: #F6E5DC;
+    font-family: Verdana, sans-serif;
+}
+header {
+    background-color: #2F180C;
+    text-align: center;
+    color: khaki;
+    height: 60px;
+}   
+div#top {
+    display: flex;
+}
+div#left {
+    width: 60%;
+}
+div#right {
+    font-size: 150%;
+    padding: 70px;
+}
+div#bottom {
+    background-color: #D0B6A8;
+    text-align: center;
+    padding: 30px;
+
+}
+footer {
+    background-color:  #2F180C;
+    color: khaki;
+    height: 60px;
+}
+img {
+    height: 350px;
+}
+input[type=submit],
+input[type=reset] {
+    margin: 10px;
+    padding: 5px;
+    background-color: #2F180C;
+    color: khaki;
+}
