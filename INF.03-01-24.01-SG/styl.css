@@ -1,0 +1,58 @@
+body {
+    background-color: #eeeeee;
+    font-family: Helvetica, sans-serif;
+    
+}
+div#container {
+    width: 90%;
+    margin: 0 auto;
+}
+div#top{
+    display: flex;
+}
+div#topLeft,
+div#topRight {
+    background-color: lightblue;
+    height: 100px;
+    flex: 1;
+    padding: 0 10px;
+    /*float: left;
+    box-sizing: border-box;*/
+}
+div#topRight a {
+    color: navy;
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+}
+div#topRight a:hover {
+    border: 1px solid navy;
+}
+div#baner {
+    clear: both;
+    height: 200px;
+    background-color: #dddddd;
+}
+main {
+    color: navy;
+    margin: 50px;
+    height: 400px;
+}
+footer {
+    text-align: right;
+    background-color:lightblue;
+    padding: 10px;
+}
+input[type=button],
+input[type=reset] {
+    background-color: lightblue;
+    color: navy;
+}
+p#komunikat {
+    color: navy;
+}
+p#error{
+    color: red;
+}
