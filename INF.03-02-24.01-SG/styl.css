@@ -1,0 +1,42 @@
+body {
+    background-color: #e0f7fa;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+div#container {
+    width: 95%;
+    margin: auto;
+}
+div#baner {
+    background-color: #00838f;
+    height: 200px;
+}
+nav {
+    background-color: #006064;
+    padding: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+}
+main > div {
+    height: 350px;
+    width: 33%;
+    float: left;
+}
+footer {
+    background-color: #006064;
+    color: white;
+    text-align: right;
+    padding: 10px;
+    clear: both;
+}
+ul {
+    text-align: left;
+}
+input[type=reset],
+input[type=button]{
+    background-color: #00838f;
+    color: white;
+}

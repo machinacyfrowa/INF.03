@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komputery</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="icon" href="favicon.png">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="baner">
+                <img src="animacja.gif" alt="Pogotowie komputerowe">
+            </div>
+            
+            <nav>
+                <a href="index.html">Strona główna</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+        </header>
+        <main>
+            <div id="left">
+                
+            </div>
+            <div id="center">
+                <h2>Kontakt</h2>
+                <form>
+                <table>
+                    <tr>
+                        <td>Imię:</td>
+                        <td><input type="text" id="firstNameInput"></td>
+                    </tr>
+                    <tr>
+                        <td>Nazwisko:</td>
+                        <td><input type="text" id="lastNameInput"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><input type="email" id="emailInput"></td>
+                    </tr>
+                    <tr>
+                        <td>Zgłoszenie:</td>
+                        <td><select id="topic">
+                            <option value="naprawa komputerów">naprawa komputerów</option>
+                            <option value="odzyskiwanie danych">odzyskiwanie danych</option>
+                            <option value="wirusy">wirusy</option>
+                            <option value="konfiguracja lan">konfiguracja lan</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" id="copy" checked>
+                            Wyślij kopie wiadomości
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="reset" value="Czyść">
+                            <input type="button" value="Wyślij" onclick="send()">
+                        </td>
+                    </tr>
+                </table>
+                </form>
+                <hr>
+                <p id="scriptOutput"></p>
+            </div>
+            <div id="right">
+             
+            </div>
+        </main>
+        <footer>
+            Autor: <em>00000000000</em>
+        </footer>
+    </div>
+    <script>
+        function send() {
+            let firstName = document.getElementById("firstNameInput").value;
+            let lastName = document.getElementById("lastNameInput").value;
+            let email = document.getElementById("emailInput").value;
+            let topic = document.getElementById("topic").value;
+
+            //pierwsza linijka
+            let outputString = firstName + " " + lastName + "<br>";
+            //druga linijka
+            outputString += email.toLowerCase() + "<br>";
+            //trzecia linijka
+            outputString += "Usługa: " + topic;
+
+            //wyświetl gotowy tekst na stronie
+            document.getElementById("scriptOutput").innerHTML = outputString;
+        }
+    </script>
+</body>
+</html>
