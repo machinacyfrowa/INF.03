@@ -1,0 +1,5 @@
+1. SELECT nazwa, cena FROM `uslugi` WHERE cena >= 50;
+2. SELECT avg(cena) as srednia_cena, count(*) as liczba_uslug FROM `uslugi` WHERE kadra_id=2;
+2. alt. SELECT avg(cena) as srednia_cena, count(*) as liczba_uslug FROM `uslugi` LEFT JOIN kadra ON uslugi.kadra_id = kadra.id WHERE kadra.stanowisko LIKE "%kosm%";
+3. CREATE USER 'kosmetyczka'@'localhost' IDENTIFIED by 'Kosmet34';
+4. GRANT SELECT, UPDATE ON  `salon`.`uslugi` TO 'kosmetyczka'@'localhost';

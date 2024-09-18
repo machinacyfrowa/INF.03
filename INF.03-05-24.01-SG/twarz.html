@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon kosmetyczny</title>
+    <link rel="stylesheet" href="styl7.css">
+</head>
+<body>
+    <aside>
+        <div id="leftTop">
+        <h2>Nasza oferta</h2>
+        <ol>
+            <li><a href="twarz.html">Oczyszczanie twarzy</a>
+                <ul>
+                    <li>Peeling</li>
+                    <li>Maska</li>
+                </ul>
+            </li>
+            <li>Masaż</li>
+            <li>Makijaż</li>
+        </ol>
+        <a href="index.html" id="indexLink">Strona główna</a>
+        </div>
+        <div id="leftBottom">
+            <img src="obraz1.jpg" alt="Personel">
+        </div>
+        
+    </aside>
+    <header>
+        <h1>Usługi kosmetyczne</h1>
+    </header>
+    <main>
+        <h3>Kalkulator ceny wizyty</h3>
+        <input type="checkbox" id="peelingCheckbox">Peeling<br>
+        <input type="checkbox" id="maskaCheckbox">Maska<br>
+        <input type="checkbox" id="masazCheckbox">Masaż twarzy<br>
+        <input type="checkbox" id="makijazCheckbox">Makijaż<br>
+        <button onclick="oblicz()">Oblicz cenę</button>
+        <p id="cena"></p>
+    </main>
+    <footer>
+        <p>Autor: 00000000000</p>
+    </footer>
+    <script>
+        function oblicz() {
+            let suma = 0;
+            if (document.getElementById("peelingCheckbox").checked) 
+            {
+                suma += 45;
+            }
+            if (document.getElementById("maskaCheckbox").checked) 
+            {
+                suma += 30;
+            }
+            if (document.getElementById("masazCheckbox").checked) 
+            {
+                suma += 20;
+            }
+            if (document.getElementById("makijazCheckbox").checked) 
+            {
+                suma += 50;
+            }
+            let tekstWyjsciowy = "Suma zabiegów: " + suma;
+            document.getElementById("cena").innerHTML = tekstWyjsciowy;
+        }
+    </script>
+</body>
+</html>
