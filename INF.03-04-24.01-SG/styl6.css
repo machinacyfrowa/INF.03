@@ -1,0 +1,38 @@
+* {
+    font-family: Verdana, sans-serif;
+}
+header > div {
+    background-color: #6f79a8;
+    color: white;
+    height: 140px;
+    float: left;
+}
+div#logo {
+    width: 30%;
+}
+div#title {
+    width: 70%;
+}
+main > div {
+    background-color: #9fa8da;
+    width: 160px;
+    height: 85px;
+    margin: 5px;
+    border: 1px solid #6f79a8;
+    overflow: hidden;
+    float: left;
+}
+main > div:hover {
+    background-color: #6f79a8;
+    color: white;
+}
+footer {
+    background-color: #6f79a8;
+    color: white;
+    padding: 5px;
+    text-align: right;
+    clear: both;
+}
+h6 {
+    text-align: center;
+}
