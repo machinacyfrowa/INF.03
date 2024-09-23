@@ -1,0 +1,48 @@
+* {
+    font-family: Georgia, serif;
+    text-align: center;
+}
+header,
+footer {
+background-color: #ba6b6c;
+color: white;
+padding: 7px;
+}
+div#left,
+div#right {
+    background-color: #ef9a9a;
+    width: 20%;
+    float: left;
+    height: 500px;
+}
+div#center {
+    background-color: mistyrose;
+    width: 60%;
+    float: left;
+    height: 500px;
+}
+div#bottom {
+    background-color: mistyrose;
+    clear: both;
+    padding: 50px;
+}
+ol {
+    list-style: upper-roman;
+}
+li {
+    text-align: left;
+}
+h2::first-letter {
+    font-size: 170%;
+    color:maroon;
+}
+table {
+    margin: auto;
+    width: 80%;
+    border: 1px solid maroon;
+}
+img {
+    height: 120px;
+    margin: 7px;
+    box-shadow: 7px 7px 7px dimgray;
+}
