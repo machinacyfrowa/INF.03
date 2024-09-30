@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fryzjerstwo</title>
+    <link rel="stylesheet" href="styl8.css">
+</head>
+
+<body>
+    <div id="left">
+        <header>
+            <a href="index.html">
+                <h1>SALON FRYZJERSKI</h1>
+            </a>
+        </header>
+        <main id="center">
+            <h2>Promocja</h2>
+            <input type="radio" name="length" id="shortRadio" checked>Krótkie<br>
+            <input type="radio" name="length" id="midRadio">Średnie<br>
+            <input type="radio" name="length" id="halfLongRadio">Półdługie<br>
+            <input type="radio" name="length" id="longRadio">Długie<br>
+            <button onclick="getPrice()">Odkryj promocje</button>
+            <p id="price"></p>
+        </main>
+        <main id="contact">
+            <p>Witaj! Miło nam, że odwiedziłeś nasz salon. Sprawdź promocje!</p>
+            <h4>Kontakt: 444 555 666</h4>
+        </main>
+    </div>
+    <div id="right">
+        <aside id="priceList">
+            <a href="fryzura.html">
+                <h4>Ceny strzyżenia</h4>
+            </a>
+            <table>
+                <tr>
+                    <td>Długość włosów</td>
+                    <td>Cena</td>
+                </tr>
+                <tr>
+                    <td>Krótkie</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Średnie</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Półdługie</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Długie</td>
+                    <td>50</td>
+                </tr>
+            </table>
+        </aside>
+        <aside id="picture">
+            <img src="obraz1.jpg" alt="Fryzjerka">
+        </aside>
+    </div>
+    <footer>
+        <p>Autor: 00000000000</p>
+    </footer>
+
+<script>
+    function getPrice() {
+        //short = true / false
+        let short = document.getElementById("shortRadio").checked; 
+        let mid = document.getElementById("midRadio").checked;
+        let halfLong = document.getElementById("halfLongRadio").checked;
+        let long = document.getElementById("longRadio").checked;
+        let price = 0;
+        if(short) price = 15;
+        else if(mid) price = 20;
+        else if(halfLong) price = 30;
+        else if(long) price = 40;
+        let outputString = "cena promocyjna: " + price;
+        document.getElementById("price").innerHTML = outputString;
+    }
+    
+</script>
+</body>
+
+</html>

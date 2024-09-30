@@ -1,0 +1,4 @@
+1. SELECT imie, nazwisko, stanowisko FROM `kadra` WHERE stanowisko in ("fryzjer", "stylista");
+2. SELECT count(*), max(cena) FROM `uslugi` WHERE rodzaj = 2;
+3. SELECT nazwa, imie FROM `uslugi` LEFT JOIN kadra ON uslugi.kadra_id = kadra.id WHERE rodzaj IN (2,3);
+4. ALTER TABLE `uslugi` ADD `opinia` TEXT;
