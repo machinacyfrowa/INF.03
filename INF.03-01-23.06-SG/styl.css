@@ -1,0 +1,41 @@
+* {
+    font-family: Garamond;
+    text-align: center;
+}
+header,
+footer {
+    background-color: #8C7B75;
+    color: white;
+    height: 70px;
+    font-size: 150%;
+}
+aside {
+    background-color: #BCAAA4;
+    height: 400px;
+    width: 35%;
+    float: left;
+}
+main {
+    background-color: #EFDCD5;
+    height: 400px;
+    width: 30%;
+    float: left;
+}
+ol {
+    list-style: lower-latin;
+}
+li {
+    text-align: left;
+}
+img {
+    border: 1px dashed #8C7B75;
+    padding: 5px;
+    border-radius: 10%;
+}
+main > p {
+    margin-top: 100px;
+    border: 1px solid #8C7B75;
+}
+footer {
+    clear: both;
+}
