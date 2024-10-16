@@ -1,0 +1,4 @@
+1. SELECT cena,pojemnosc FROM `farby` WHERE kolor = "czerwony"
+2. SELECT kolor, (cena/pojemnosc) AS cena_jednostkowa FROM `farby`;
+3. SELECT kolor, liczba_puszek FROM `malowanie` LEFT JOIN farby ON malowanie.id_farby=farby.id_farby WHERE id_pomieszczenia=3;
+4. CREATE VIEW pomieszczenie1 AS SELECT malowanie.id_sciany, malowanie.id_farby, malowanie.liczba_puszek FROM malowanie WHERE malowanie.id_pomieszczenia = 1;

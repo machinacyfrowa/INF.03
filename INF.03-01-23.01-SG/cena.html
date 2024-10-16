@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>malarz</title>
+    <link rel="stylesheet" href="styl_1.css">
+</head>
+<body>
+    <header>
+        <h1>Malowanie pokoi i biur</h1>
+    </header>
+    <main>
+        <div id="left">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="mieszamy.html">Mieszamy</a></li>
+                <li><a href="cena.html">Wyceniamy</a></li>
+            </ul>
+        </div>
+        <div id="center">
+            <h2>Zapotrzebowanie na farbę</h2>
+            <label for="surfaceInput">Powierzchnia malowania (m<sup>2</sup>):</label>
+            <input type="number" name="" id="surfaceInput">
+            <button onclick="count()">Policz</button>
+            <p id="output"></p>
+        </div>
+        <div id="right">
+            <img src="obraz.png" alt="Próbki farb">
+        </div>
+    </main>
+    <footer>
+        <h3>MALARZ</h3>
+        <p>Stronę opracował: 00000000000</p>
+    </footer>
+    <script>
+        function count() {
+            //wyciągnij powierzchnię z kontrolki
+            let surface = document.getElementById('surfaceInput').value;
+            //1 puszka starcza na 4m2 więc podzielimy powierzchnię 
+            //na kawałki po 4m2 i zaokrąglimy w górę
+            let cans = Math.ceil(surface / 4);
+            //wyświetl wynik
+            document.getElementById('output').innerHTML = "Liczba potrzebnych puszek: " + cans;
+        }
+    </script>
+</body>
+</html>
