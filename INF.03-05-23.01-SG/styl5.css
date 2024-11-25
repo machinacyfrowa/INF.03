@@ -1,0 +1,45 @@
+* {
+    font-family: Tahoma, sans-serif;
+}
+header {
+    background-color:#7DA453;
+    color: white;
+    height: 120px;
+}
+header > div {
+    float: left;
+}
+div#left,
+div#center {
+    width: 40%;
+}
+div#right {
+    width: 20%;
+}
+main {
+    clear: both;
+}
+div.event {
+    background-color: #AED581;
+    width: 200px;
+    height: 100px;
+    margin: 7px;
+    border: 1px solid #7DA453;
+    float: left;
+}
+div.event:hover {
+    background-color: #7DA453;
+    color: white;
+}
+footer {
+    background-color: #7DA453;
+    color: white;
+    clear: both;
+    padding: 5px;
+}
+h5 {
+    text-align: center;
+}
+form {
+    padding-top: 50px;
+}
