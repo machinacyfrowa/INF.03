@@ -1,0 +1,66 @@
+* {
+    font-family: Garamond, sans-serif;
+}
+header {
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    height: 80px;
+    overflow: hidden;
+}
+main {
+    width: 80%;
+    height: 600px;
+    float: left;
+}
+
+aside {
+    background-color: coral;
+    width: 20%;
+    height: 680px;
+    float: left;
+}
+footer {
+    clear: both;
+    background-color: tomato;
+    color: white;
+    text-align: center;
+}
+img {
+    border-radius: 50%;
+    padding: 0 10px;
+}
+div#chat {
+    border: 1px solid tomato;
+    margin: 15px;
+    height: 470px;
+    overflow: scroll;
+}
+div#chat > div {
+    border-radius: 5px;
+    width: 90%;
+    height: 70px;
+    margin: 2%;
+    padding: 3px;
+}
+div#chatLeft {
+    background-color: #EEE;
+}
+div#chatLeft img {
+    float: left;
+}
+div#chatRight {
+    background-color: #CCC;
+}
+div#chatRight img {
+    float: right;
+}
+button {
+    background-color: tomato;
+    border: 1px solid darkred;
+    padding: 5px;
+    font-weight: bold;
+}
+input[type=text] {
+    width: 500px;
+}

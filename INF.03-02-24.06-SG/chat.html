@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <h2>Chat</h2>
+        </header>
+
+        <div id="chat">
+            <div id="chatLeft">
+                <img src="Jolka.jpg" alt="">
+                <p>Cześć idziesz jutro do
+                    kina?</p>
+            </div>
+            <div id="chatRight">
+                <img src="Krzysiek.jpg" alt="">
+                <p>Tak! A ty?</p>
+            </div>
+        </div>
+        <label for="responseInput">Wpisz wiadomość:</label>
+        <input type="text" id="responseInput">
+        <button onclick="sendMessage()">Wyślij</button>
+        <br>
+        <button onclick="randomMessage()">Generuj losową odpowiedź</button>
+
+
+    </main>
+    <aside>
+        <h3>Chaty</h3>
+        <ul>
+            <li>Ogólny</li>
+            <li>Tematyczny
+                <ol>
+                    <li>Turystyczny</li>
+                    <li>żeglarski</li>
+                    <li>Filatelistyczny</li>
+                    <li>Hodowla zwierząt hodowlanych</li>
+                </ol>
+            </li>
+        </ul>
+        <h3>Uczestnicy</h3>
+        <p>Jolanta Nowak</p>
+        <img src="Jolka.jpg" alt="Jolanta Nowak">
+        <p>Krzysztof Łukasiński</p>
+        <img src="Krzysiek.jpg" alt="Krzysztof Łukasiński">
+    </aside>
+    <footer>
+        <h5>Chat wykonał: 00000000000</h5>
+    </footer>
+    <script>
+        let chat = document.getElementById("chat");
+        let responseArray = ["Świetnie!",
+            "Kto gra główną rolę?",
+            "Lubisz filmy Tego reżysera?",
+            "Będę 10 minut wcześniej",
+            "Może kupimy sobie popcorn?",
+            "Ja wolę Colę",
+            "Zaproszę jeszcze Grześka",
+            "Tydzień temu też byłem w kinie na Diunie",
+            "Ja funduję bilety"];
+        function sendMessage() {
+            //pobierz tekst z pola edycyjnego do zmiennej
+            let response = document.getElementById("responseInput").value;
+            let htmlOutput = '<div id="chatLeft">';
+            htmlOutput += '<img src="Jolka.jpg">';
+            htmlOutput += '<p>' + response + '</p>';
+            htmlOutput += '</div>';
+            chat.innerHTML += htmlOutput;
+        }
+        function randomMessage() {
+            let randomIndex = Math.floor(Math.random() * 8);
+            let htmlOutput = '<div id="chatRight">';
+            htmlOutput += '<img src="Krzysiek.jpg">';
+            htmlOutput += '<p>' + responseArray[randomIndex] + '</p>';
+            htmlOutput += '</div>';
+            chat.innerHTML += htmlOutput;
+        }
+    </script>
+</body>
+
+</html>
